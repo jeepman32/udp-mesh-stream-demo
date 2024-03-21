@@ -11,7 +11,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
     "mnemonic-id": "^3.2.7",
-    "naudiodon": "file:../naudiodon/naudiodon-2.4.1.tgz",
+    "naudiodon-neo": "2.4.1",
     "nodemon": "^3.1.0",
     "prettier": "^3.2.5",
     "tsx": "^4.7.1",

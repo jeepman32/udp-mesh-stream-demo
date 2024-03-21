@@ -23,9 +23,9 @@ dependencies:
   mnemonic-id:
     specifier: ^3.2.7
     version: 3.2.7
-  naudiodon:
-    specifier: file:../naudiodon/naudiodon-2.4.1.tgz
-    version: file:../naudiodon/naudiodon-2.4.1.tgz
+  naudiodon-neo:
+    specifier: 2.4.1
+    version: 2.4.1
   nodemon:
     specifier: ^3.1.0
     version: 3.1.0
@@ -1201,6 +1201,14 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: false
 
+  /naudiodon-neo@2.4.1:
+    resolution: {integrity: sha512-/ATrp8kko7a1yWhyGIoNc6+2Fif2U07AwxkNwitLRA0qIIr4qb1hQzRM+t+TS5SSqQevGrw0TuV8ZSAZapyobA==}
+    requiresBuild: true
+    dependencies:
+      bindings: 1.5.0
+      segfault-handler: 1.3.0
+    dev: false
+
   /nodemon@3.1.0:
     resolution: {integrity: sha512-xqlktYlDMCepBJd43ZQhjWwMw2obW/JRvkrLxq5RCNcuDDX1DbcPT+qT1IlIIdf+DhnWs90JpTMe+Y5KxOchvA==}
     engines: {node: '>=10'}
@@ -1544,14 +1552,4 @@ packages:
   /yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
-    dev: false
-
-  file:../naudiodon/naudiodon-2.4.1.tgz:
-    resolution: {integrity: sha512-6gwXLMiERdqjZQNM8wa3VKAzb3nEwCVV1zOCGI9MsKjHC0qNOv4Bv3/ufwnkiaVskAlMNXu3xMT5ggLapYR1vQ==, tarball: file:../naudiodon/naudiodon-2.4.1.tgz}
-    name: naudiodon
-    version: 2.4.1
-    requiresBuild: true
-    dependencies:
-      bindings: 1.5.0
-      segfault-handler: 1.3.0
     dev: false
