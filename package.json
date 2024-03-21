@@ -1,22 +1,21 @@
 {
   "type": "module",
   "scripts": {
-    "start": "tsx index.ts",
+    "start": "tsx src/index.ts",
     "dev": "nodemon --exec \"npm run start\" index.ts"
   },
   "dependencies": {
     "@types/express": "^4.17.2",
     "@types/simple-peer": "^9.11.8",
+    "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
-    "eslint": "^8.57.0",
     "mnemonic-id": "^3.2.7",
+    "naudiodon": "file:../naudiodon/naudiodon-2.4.1.tgz",
     "nodemon": "^3.1.0",
     "prettier": "^3.2.5",
-    "simple-peer": "^9.11.1",
     "tsx": "^4.7.1",
-    "typescript-eslint": "^7.3.1",
     "typescript": "^5.4.2",
-    "wrtc": "^0.4.7"
+    "typescript-eslint": "^7.3.1"
   }
 }

@@ -1,13 +1,26 @@
 # syntax=docker/dockerfile:1.4
 
-FROM node:lts-buster-slim AS development
+FROM debian:12 AS development
 
-# Create app directory
-WORKDIR /usr/src/app
+RUN apt update -yq
+RUN apt install curl -yq
+RUN curl -fsSL https://deb.nodesource.com/setup_current.x | bash - && \
+  apt install -y nodejs \
+  build-essential && \
+  node --version && \
+  npm --version
 
-COPY ./server/package.json /usr/src/app/package.json
-COPY ./server/pnpm-lock.yaml /usr/src/app/pnpm-lock.yaml
-# Very purposefully use system node_modules. We don't need to reinstall them on the image.
-COPY ./server .
+RUN apt install gnupg -yq
+RUN apt install python3 -yq
+RUN apt install python3-pyaudio -yq
+RUN apt install pulseaudio -yq
+RUN apt install socat -yq
+RUN apt install alsa-utils -yq
+RUN apt clean -y
 
-CMD [ "npm", "run", "dev" ]
+COPY package.json /usr/src/app/package.json
+COPY pnpm-lock.yaml /usr/src/app/pnpm-lock.yaml
+COPY . .
+RUN chmod +x ./run.sh
+
+CMD ./run.sh
