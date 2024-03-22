@@ -1,11 +1,10 @@
 import { createNameId } from "mnemonic-id";
 import fastJson from "fast-json-stringify";
 // import parse from 'fast-json-parse'
-import SimpleUdpStream from "simple-udp-stream";
 
 import Datagram from "dgram";
 import path from "path";
-import { createReadStream, createWriteStream } from "fs";
+import { createReadStream, createWriteStream, WriteStream } from "fs";
 import { ports } from "./constants";
 
 interface Message {
@@ -31,13 +30,11 @@ const ourName = createNameId();
 const serverSocket = Datagram.createSocket({ type: "udp4" });
 const clientSocket = Datagram.createSocket({ type: "udp4" });
 
-const musicWriteStream = createWriteStream(
-  path.join(import.meta.dirname, "/scarlett_fire.raw"),
+const musicReadStream = createReadStream(
+  path.join(import.meta.dirname, "./scarlet_fire.mp3"),
 );
 
-const musicReadStream = createReadStream(
-  path.join(import.meta.dirname, "./scarlet_fire.wav"),
-);
+const writeStreams = new Map<string, WriteStream>();
 
 clientSocket.on("listening", () => {
   clientSocket.setBroadcast(true);
@@ -58,10 +55,23 @@ clientSocket.on("message", (message) => {
     return;
   }
 
-  musicWriteStream.write(data);
+  if (!writeStreams.has(from)) {
+    console.log(`I am ${ourName}, I got from ${from}`);
+    writeStreams.set(
+      from,
+      createWriteStream(
+        path.join(import.meta.dirname, `$./${from}_scarlet_fire.raw`),
+      ),
+    );
+  }
+
+  const musicWriteStream = writeStreams.get(from);
+
+  return (musicWriteStream as WriteStream).write(data);
 });
 
 clientSocket.bind(ports.PEER_CLIENT_PORT);
+
 serverSocket.bind(() => {
   serverSocket.setBroadcast(true);
   serverSocket.setMulticastTTL(128);
@@ -75,16 +85,20 @@ serverSocket.bind(() => {
     let chunk;
 
     while (null !== (chunk = musicReadStream.read(chunkBytes))) {
+      const packet = stringify({
+        from: ourName,
+        data: chunk.toString(),
+      });
+
       serverSocket.send(
-        JSON.stringify({
-          from: ourName,
-          data: chunk,
-        } satisfies Message),
+        packet,
         0,
-        chunk.length,
-        ports.PEER_SERVER_PORT,
+        packet.length,
+        ports.PEER_CLIENT_PORT,
         "224.0.0.1",
       );
+
+      continue;
     }
   });
 });
