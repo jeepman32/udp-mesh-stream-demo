@@ -2,7 +2,6 @@
 
 mkdir -p /var/run/dbus
 dbus-uuidgen >/var/lib/dbus/machine-id
-dbus-daemon --config-file=/usr/share/dbus-1/system.conf --print-address
 adduser root pulse-access
 adduser root pulse
 
@@ -21,4 +20,4 @@ pacmd load-module module-native-protocol-unix
 pacmd list-cards
 pacmd list-sinks
 
-npm run dev
+npm run start

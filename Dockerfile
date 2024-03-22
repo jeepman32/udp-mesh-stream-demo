@@ -23,4 +23,6 @@ COPY pnpm-lock.yaml /usr/src/app/pnpm-lock.yaml
 COPY . .
 RUN chmod +x ./run.sh
 
+ENV DOCKER=true
+
 CMD ./run.sh
