@@ -1,0 +1,558 @@
+Statistical profiling result from naudodon-neo.log, (2136 ticks, 678 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+    287   13.4%          /usr/lib/x86_64-linux-gnu/libc.so.6
+     18    0.8%          /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+      1    0.0%          /home/hayden/n/bin/node
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     14    0.7%    0.8%  Builtin: LoadIC
+     11    0.5%    0.6%  Builtin: CallFunction_ReceiverIsNullOrUndefined
+      8    0.4%    0.4%  Builtin: BaselineOutOfLinePrologue
+      6    0.3%    0.3%  Builtin: StrictEqual_Baseline
+      5    0.2%    0.3%  JS: ~toString node:buffer:811:46
+      5    0.2%    0.3%  Builtin: KeyedLoadIC
+      4    0.2%    0.2%  Builtin: KeyedLoadIC_PolymorphicName
+      4    0.2%    0.2%  Builtin: Call_ReceiverIsAny
+      4    0.2%    0.2%  Builtin: CallFunction_ReceiverIsAny
+      3    0.1%    0.2%  Builtin: RecordWriteSaveFP
+      3    0.1%    0.2%  Builtin: KeyedLoadIC_Megamorphic
+      3    0.1%    0.2%  Builtin: CallFunction_ReceiverIsNotNullOrUndefined
+      3    0.1%    0.2%  Builtin: CallApiCallbackGeneric
+      2    0.1%    0.1%  JS: *noop node:internal/util/debuglog:46:14
+      2    0.1%    0.1%  JS: *gA /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/tsx@4.7.1/node_modules/tsx/dist/index-971a6964.cjs:12:599
+      2    0.1%    0.1%  Builtin: ToBooleanForBaselineJump
+      2    0.1%    0.1%  Builtin: StoreIC
+      2    0.1%    0.1%  Builtin: LessThan_Baseline
+      2    0.1%    0.1%  Builtin: KeyedStoreIC
+      2    0.1%    0.1%  Builtin: GetProperty
+      2    0.1%    0.1%  Builtin: FastNewClosure
+      2    0.1%    0.1%  Builtin: CreateShallowArrayLiteral
+      2    0.1%    0.1%  Builtin: Construct
+      2    0.1%    0.1%  Builtin: Call_ReceiverIsNullOrUndefined
+      2    0.1%    0.1%  Builtin: Call_ReceiverIsNotNullOrUndefined
+      2    0.1%    0.1%  Builtin: BitwiseAnd_Baseline
+      2    0.1%    0.1%  Builtin: BaselineLeaveFrame
+      1    0.0%    0.1%  JS: ~s file:///home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/get-tsconfig@4.7.3/node_modules/get-tsconfig/dist/index.mjs:3:3042
+      1    0.0%    0.1%  JS: ~initAsyncResource node:internal/timers:155:27
+      1    0.0%    0.1%  JS: ~gA /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/tsx@4.7.1/node_modules/tsx/dist/index-971a6964.cjs:12:599
+      1    0.0%    0.1%  JS: ~<anonymous> /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/tsx@4.7.1/node_modules/tsx/dist/source-map.cjs:1:1
+      1    0.0%    0.1%  JS: wasm-function[15]
+      1    0.0%    0.1%  JS: ^pipeOnDrainFunctionResult node:internal/streams/readable:1068:44
+      1    0.0%    0.1%  JS: ^onwrite node:internal/streams/writable:607:17
+      1    0.0%    0.1%  JS: ^isIP node:internal/net:45:14
+      1    0.0%    0.1%  JS: ^doRead /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/naudiodon-neo@2.4.1/node_modules/naudiodon-neo/index.js:35:18
+      1    0.0%    0.1%  JS: ^anonymous0 :7:25
+      1    0.0%    0.1%  JS: ^Readable.read node:internal/streams/readable:645:35
+      1    0.0%    0.1%  JS: ^C node:internal/deps/cjs-module-lexer/dist/lexer:1:1152
+      1    0.0%    0.1%  JS: *wrappedFn node:internal/errors:536:21
+      1    0.0%    0.1%  JS: *wasm-function[19]
+      1    0.0%    0.1%  JS: *normalizeString node:path:66:25
+      1    0.0%    0.1%  Builtin: StringIndexOf
+      1    0.0%    0.1%  Builtin: StoreFastElementIC_Standard
+      1    0.0%    0.1%  Builtin: StoreFastElementIC_GrowNoTransitionHandleCOW
+      1    0.0%    0.1%  Builtin: ResumeGeneratorTrampoline
+      1    0.0%    0.1%  Builtin: RegExpPrototypeTest
+      1    0.0%    0.1%  Builtin: LoadGlobalIC
+      1    0.0%    0.1%  Builtin: LessThanOrEqual_Baseline
+      1    0.0%    0.1%  Builtin: KeyedLoadICBaseline
+      1    0.0%    0.1%  Builtin: JSConstructStubGeneric
+      1    0.0%    0.1%  Builtin: InterpreterEntryTrampoline
+      1    0.0%    0.1%  Builtin: InstanceOf_Baseline
+      1    0.0%    0.1%  Builtin: FindOrderedHashMapEntry
+      1    0.0%    0.1%  Builtin: FastNewFunctionContextFunction
+      1    0.0%    0.1%  Builtin: CreateTypedArray
+      1    0.0%    0.1%  Builtin: Construct_Baseline
+      1    0.0%    0.1%  Builtin: CompileLazy
+      1    0.0%    0.1%  Builtin: Call_ReceiverIsNullOrUndefined_Baseline_Compact
+      1    0.0%    0.1%  Builtin: Call_ReceiverIsNotNullOrUndefined_Baseline_Compact
+      1    0.0%    0.1%  Builtin: CallFunctionTemplate_Generic
+      1    0.0%    0.1%  Builtin: AsyncFunctionEnter
+      1    0.0%    0.1%  Builtin: ArrayFilterLoopContinuation
+      1    0.0%    0.1%  Builtin: Add_Baseline
+      1    0.0%    0.1%  Builtin: AddSmi_Baseline
+
+ [C++]:
+   ticks  total  nonlib   name
+    785   36.8%   42.9%  epoll_pwait@@GLIBC_2.6
+     71    3.3%    3.9%  sendmsg@@GLIBC_2.2.5
+     59    2.8%    3.2%  __write@@GLIBC_2.2.5
+     28    1.3%    1.5%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     17    0.8%    0.9%  fwrite@@GLIBC_2.2.5
+      8    0.4%    0.4%  _IO_file_xsputn@@GLIBC_2.2.5
+      7    0.3%    0.4%  pthread_cond_signal@@GLIBC_2.3.2
+      5    0.2%    0.3%  syscall@@GLIBC_2.2.5
+      4    0.2%    0.2%  isprint@@GLIBC_2.2.5
+      4    0.2%    0.2%  clock_nanosleep@GLIBC_2.2.5
+      2    0.1%    0.1%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      2    0.1%    0.1%  fputc@@GLIBC_2.2.5
+      2    0.1%    0.1%  brk@@GLIBC_2.2.5
+      2    0.1%    0.1%  __open@@GLIBC_2.2.5
+      2    0.1%    0.1%  __libc_malloc@@GLIBC_2.2.5
+      1    0.0%    0.1%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      1    0.0%    0.1%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      1    0.0%    0.1%  pthread_getattr_default_np@@GLIBC_2.34
+      1    0.0%    0.1%  pthread_create@GLIBC_2.2.5
+      1    0.0%    0.1%  operator new[](unsigned long, std::nothrow_t const&)@@GLIBCXX_3.4
+      1    0.0%    0.1%  getdents64@@GLIBC_2.30
+      1    0.0%    0.1%  cfree@GLIBC_2.2.5
+      1    0.0%    0.1%  __pthread_once@GLIBC_2.2.5
+      1    0.0%    0.1%  __mprotect@@GLIBC_PRIVATE
+      1    0.0%    0.1%  __mmap@@GLIBC_PRIVATE
+      1    0.0%    0.1%  __lll_lock_wait_private@@GLIBC_PRIVATE
+      1    0.0%    0.1%  __errno_location@@GLIBC_2.2.5
+      1    0.0%    0.1%  __close_nocancel@@GLIBC_PRIVATE
+      1    0.0%    0.1%  __close@@GLIBC_2.2.5
+      1    0.0%    0.1%  _IO_file_sync@@GLIBC_2.2.5
+
+ [Summary]:
+   ticks  total  nonlib   name
+    139    6.5%    7.6%  JavaScript
+   1013   47.4%   55.4%  C++
+     61    2.9%    3.3%  GC
+    306   14.3%          Shared libraries
+    678   31.7%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+     71   35.9%    3.3%  sendmsg@@GLIBC_2.2.5
+     37   18.7%    1.7%  __write@@GLIBC_2.2.5
+     27   13.6%    1.3%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     16    8.1%    0.7%  fwrite@@GLIBC_2.2.5
+      8    4.0%    0.4%  _IO_file_xsputn@@GLIBC_2.2.5
+      6    3.0%    0.3%  pthread_cond_signal@@GLIBC_2.3.2
+      5    2.5%    0.2%  syscall@@GLIBC_2.2.5
+      4    2.0%    0.2%  isprint@@GLIBC_2.2.5
+      4    2.0%    0.2%  clock_nanosleep@GLIBC_2.2.5
+      2    1.0%    0.1%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+      2    1.0%    0.1%  brk@@GLIBC_2.2.5
+      2    1.0%    0.1%  __open@@GLIBC_2.2.5
+      2    1.0%    0.1%  __libc_malloc@@GLIBC_2.2.5
+      1    0.5%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      1    0.5%    0.0%  pthread_getattr_default_np@@GLIBC_2.34
+      1    0.5%    0.0%  pthread_create@GLIBC_2.2.5
+      1    0.5%    0.0%  operator new[](unsigned long, std::nothrow_t const&)@@GLIBCXX_3.4
+      1    0.5%    0.0%  getdents64@@GLIBC_2.30
+      1    0.5%    0.0%  fputc@@GLIBC_2.2.5
+      1    0.5%    0.0%  cfree@GLIBC_2.2.5
+      1    0.5%    0.0%  __pthread_once@GLIBC_2.2.5
+      1    0.5%    0.0%  __errno_location@@GLIBC_2.2.5
+      1    0.5%    0.0%  __close_nocancel@@GLIBC_PRIVATE
+      1    0.5%    0.0%  __close@@GLIBC_2.2.5
+      1    0.5%    0.0%  _IO_file_sync@@GLIBC_2.2.5
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+    785   36.8%  epoll_pwait@@GLIBC_2.6
+
+    678   31.7%  UNKNOWN
+    154   22.7%    JS: ^asString /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/fast-json-stringify@5.13.0/node_modules/fast-json-stringify/lib/serializer.js:101:12
+    154  100.0%      JS: ^anonymous0 :7:25
+    154  100.0%        JS: ^<anonymous> file:///home/hayden/Projects/udp-mesh-stream-demo/src/index.ts:1:1646
+    137   89.0%          JS: ^emit node:events:466:44
+    137  100.0%            JS: ^emit node:domain:477:44
+     17   11.0%          JS: *emit node:events:466:44
+     17  100.0%            JS: ^emit node:domain:477:44
+    127   18.7%    JS: ^fromStringFast node:buffer:441:24
+    127  100.0%      JS: ^fromString node:buffer:460:20
+    127  100.0%        JS: ^from node:buffer:292:28
+    124   97.6%          JS: ^sliceBuffer node:dgram:483:21
+    124  100.0%            JS: ^Socket.send node:dgram:577:33
+      3    2.4%          JS: ~sliceBuffer node:dgram:483:21
+      3  100.0%            JS: ~Socket.send node:dgram:577:33
+     91   13.4%    JS: ~AudioIO /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/naudiodon-neo@2.4.1/node_modules/naudiodon-neo/index.js:31:17
+     91  100.0%      Script: ~<anonymous> file:///home/hayden/Projects/udp-mesh-stream-demo/src/index.ts:1:1
+     91  100.0%        Builtin: AsyncFunctionAwaitResolveClosure
+     62    9.1%    JS: ~toString node:buffer:811:46
+     61   98.4%      JS: ^<anonymous> file:///home/hayden/Projects/udp-mesh-stream-demo/src/index.ts:1:1646
+     51   83.6%        JS: ^emit node:events:466:44
+     51  100.0%          JS: ^emit node:domain:477:44
+     51  100.0%            JS: ^addChunk node:internal/streams/readable:548:18
+     10   16.4%        JS: *emit node:events:466:44
+     10  100.0%          JS: ^emit node:domain:477:44
+     10  100.0%            JS: ^addChunk node:internal/streams/readable:548:18
+      1    1.6%      JS: ~<anonymous> file:///home/hayden/Projects/udp-mesh-stream-demo/src/index.ts:1:1646
+      1  100.0%        JS: ^emit node:events:466:44
+      1  100.0%          JS: ^emit node:domain:477:44
+      1  100.0%            JS: ^addChunk node:internal/streams/readable:548:18
+     27    4.0%    JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+     25   92.6%      JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      6   24.0%        JS: ~<anonymous> node:repl:1:1
+      6  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      6  100.0%            JS: ^compileForPublicLoader node:internal/bootstrap/realm:331:25
+      3   12.0%        JS: ~<anonymous> node:internal/fs/promises:1:1
+      3  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      3  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      1    4.0%        JS: ~resolveExports node:internal/modules/cjs/loader:579:24
+      1  100.0%          JS: ~Module._findPath node:internal/modules/cjs/loader:608:28
+      1  100.0%            JS: ~Module._resolveFilename node:internal/modules/cjs/loader:1056:35
+      1    4.0%        JS: ~newHandle node:internal/dgram:32:19
+      1  100.0%          JS: ~Socket node:dgram:104:16
+      1  100.0%            JS: ~createSocket node:dgram:163:22
+      1    4.0%        JS: ~load node:internal/modules/esm/loader:399:13
+      1  100.0%          JS: ~moduleProvider node:internal/modules/esm/loader:285:7
+      1  100.0%            JS: ~ModuleJob node:internal/modules/esm/module_job:55:14
+      1    4.0%        JS: ~getTranslators node:internal/modules/esm/loader:52:24
+      1  100.0%          JS: ~ModuleLoader node:internal/modules/esm/loader:82:20
+      1  100.0%            JS: ~ModuleLoader node:internal/modules/esm/loader:126:14
+      1    4.0%        JS: ~getHooksProxy node:internal/modules/esm/loader:562:23
+      1  100.0%          JS: ~CustomizedModuleLoader node:internal/modules/esm/loader:457:14
+      1  100.0%            JS: ~register node:internal/modules/esm/loader:330:11
+      1    4.0%        JS: ~get BlockList node:net:2414:16
+      1  100.0%          Builtin: ReflectGet
+      1  100.0%            JS: ~getOwn node:internal/bootstrap/realm:204:16
+      1    4.0%        JS: ~<anonymous> node:readline:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      1    4.0%        JS: ~<anonymous> node:net:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      1  100.0%            JS: ~compileForPublicLoader node:internal/bootstrap/realm:331:25
+      1    4.0%        JS: ~<anonymous> node:internal/streams/readable:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      1    4.0%        JS: ~<anonymous> node:internal/streams/end-of-stream:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      1    4.0%        JS: ~<anonymous> node:internal/streams/duplex:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      1    4.0%        JS: ~<anonymous> node:internal/modules/esm/get_format:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      1    4.0%        JS: ~<anonymous> node:internal/crypto/pbkdf2:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      1    4.0%        JS: ~<anonymous> node:crypto:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      1  100.0%            JS: ^compileForPublicLoader node:internal/bootstrap/realm:331:25
+      1    4.0%        JS: ~<anonymous> node:cluster:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      1    4.0%        JS: ~<anonymous> node:child_process:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      1  100.0%            JS: ^compileForPublicLoader node:internal/bootstrap/realm:331:25
+      1    3.7%      JS: ~compileForPublicLoader node:internal/bootstrap/realm:331:25
+      1  100.0%        JS: ~loadBuiltinModule node:internal/modules/helpers:96:27
+      1  100.0%          JS: ~Module._load node:internal/modules/cjs/loader:948:24
+      1  100.0%            JS: ~Module.require node:internal/modules/cjs/loader:1222:36
+      1    3.7%      JS: ^compileForPublicLoader node:internal/bootstrap/realm:331:25
+      1  100.0%        JS: ^loadBuiltinModule node:internal/modules/helpers:96:27
+      1  100.0%          JS: ^Module._load node:internal/modules/cjs/loader:948:24
+      1  100.0%            JS: ^Module.require node:internal/modules/cjs/loader:1222:36
+     14    2.1%    JS: ^internalCompileFunction node:internal/vm:124:33
+     11   78.6%      JS: ^wrapSafe node:internal/modules/cjs/loader:1252:18
+     11  100.0%        JS: ^Module._compile node:internal/modules/cjs/loader:1321:37
+      8   72.7%          JS: ^S /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/tsx@4.7.1/node_modules/tsx/dist/cjs/index.cjs:1:974
+      8  100.0%            JS: ^Module.load node:internal/modules/cjs/loader:1192:33
+      3   27.3%          JS: ~S /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/tsx@4.7.1/node_modules/tsx/dist/cjs/index.cjs:1:974
+      3  100.0%            JS: ^Module.load node:internal/modules/cjs/loader:1192:33
+      3   21.4%      JS: ~wrapSafe node:internal/modules/cjs/loader:1252:18
+      3  100.0%        JS: ~Module._compile node:internal/modules/cjs/loader:1321:37
+      3  100.0%          JS: ~Module._extensions..js node:internal/modules/cjs/loader:1380:37
+      3  100.0%            JS: ~Module.load node:internal/modules/cjs/loader:1192:33
+      9    1.3%    JS: ^write node:fs:825:15
+      9  100.0%      JS: ^writeAll node:internal/fs/streams:417:18
+      9  100.0%        JS: ^WriteStream._write node:internal/fs/streams:475:40
+      9  100.0%          JS: ^writeOrBuffer node:internal/streams/writable:540:23
+      9  100.0%            JS: ^_write node:internal/streams/writable:445:16
+      9    1.3%    JS: ^nextTick node:internal/process/task_queues:103:18
+      4   44.4%      JS: ^lookup node:dns:140:16
+      4  100.0%        JS: ^lookup4 node:internal/dgram:23:17
+      4  100.0%          JS: ^Socket.send node:dgram:577:33
+      4  100.0%            JS: ^<anonymous> file:///home/hayden/Projects/udp-mesh-stream-demo/src/index.ts:1:1646
+      3   33.3%      JS: ^resume node:internal/streams/readable:1245:16
+      3  100.0%        JS: ^Readable.resume node:internal/streams/readable:1225:37
+      3  100.0%          JS: ^pipeOnDrainFunctionResult node:internal/streams/readable:1068:44
+      2   66.7%            JS: ^emit node:events:466:44
+      1   33.3%            JS: *emit node:events:466:44
+      2   22.2%      JS: ^maybeReadMore node:internal/streams/readable:855:23
+      2  100.0%        JS: ^addChunk node:internal/streams/readable:548:18
+      2  100.0%          JS: ^readableAddChunkPushByteMode node:internal/streams/readable:461:38
+      2  100.0%            JS: ^Readable.push node:internal/streams/readable:385:35
+
+    287   13.4%  /usr/lib/x86_64-linux-gnu/libc.so.6
+    112   39.0%    JS: ~waitForWorker node:internal/modules/esm/hooks:521:16
+    112  100.0%      JS: ~makeSyncRequest node:internal/modules/esm/hooks:600:18
+    112  100.0%        JS: ~register node:internal/modules/esm/loader:472:11
+    112  100.0%          JS: ~register node:internal/modules/esm/loader:330:11
+    112  100.0%            JS: ~register node:internal/modules/esm/loader:600:18
+     53   18.5%    JS: ~makeSyncRequest node:internal/modules/esm/hooks:600:18
+     53  100.0%      JS: ~register node:internal/modules/esm/loader:472:11
+     53  100.0%        JS: ~register node:internal/modules/esm/loader:330:11
+     53  100.0%          JS: ~register node:internal/modules/esm/loader:600:18
+     53  100.0%            JS: ~C file:///home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/tsx@4.7.1/node_modules/tsx/dist/esm/index.mjs:1:684
+     25    8.7%    JS: ~AudioIO.ioStream.start /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/naudiodon-neo@2.4.1/node_modules/naudiodon-neo/index.js:79:20
+     25  100.0%      JS: ~<anonymous> file:///home/hayden/Projects/udp-mesh-stream-demo/src/index.ts:1:972
+     25  100.0%        JS: ^emit node:events:466:44
+     25  100.0%          JS: ~emit node:domain:477:44
+     25  100.0%            JS: ~startListening node:dgram:168:24
+     18    6.3%    JS: ^fromStringFast node:buffer:441:24
+     18  100.0%      JS: ^fromString node:buffer:460:20
+     18  100.0%        JS: ^from node:buffer:292:28
+     17   94.4%          JS: ^sliceBuffer node:dgram:483:21
+     17  100.0%            JS: ^Socket.send node:dgram:577:33
+      1    5.6%          JS: ~sliceBuffer node:dgram:483:21
+      1  100.0%            JS: ~Socket.send node:dgram:577:33
+     18    6.3%    JS: ^asString /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/fast-json-stringify@5.13.0/node_modules/fast-json-stringify/lib/serializer.js:101:12
+     17   94.4%      JS: ^anonymous0 :7:25
+     17  100.0%        JS: ^<anonymous> file:///home/hayden/Projects/udp-mesh-stream-demo/src/index.ts:1:1646
+     11   64.7%          JS: ^emit node:events:466:44
+     11  100.0%            JS: ^emit node:domain:477:44
+      6   35.3%          JS: *emit node:events:466:44
+      6  100.0%            JS: ^emit node:domain:477:44
+      1    5.6%      JS: ~anonymous0 :7:25
+      1  100.0%        JS: ~<anonymous> file:///home/hayden/Projects/udp-mesh-stream-demo/src/index.ts:1:1646
+      1  100.0%          JS: ^emit node:events:466:44
+      1  100.0%            JS: ^emit node:domain:477:44
+     13    4.5%    Script: ~<anonymous> file:///home/hayden/Projects/udp-mesh-stream-demo/src/index.ts:1:1
+     13  100.0%      Builtin: AsyncModuleEvaluate
+     13  100.0%        Builtin: CallApiCallbackGeneric
+     13  100.0%          JS: ~run node:internal/modules/esm/module_job:216:12
+     13  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+
+     71    3.3%  sendmsg@@GLIBC_2.2.5
+     70   98.6%    JS: ^doSend node:dgram:678:16
+     70  100.0%      JS: ^defaultTriggerAsyncIdScope node:internal/async_hooks:455:36
+     70  100.0%        JS: ^afterDns node:dgram:663:20
+     42   60.0%          JS: ^processTicksAndRejections node:internal/process/task_queues:67:35
+     28   40.0%          JS: *processTicksAndRejections node:internal/process/task_queues:67:35
+      1    1.4%    JS: ~doSend node:dgram:678:16
+      1  100.0%      JS: ^defaultTriggerAsyncIdScope node:internal/async_hooks:455:36
+      1  100.0%        JS: ^afterDns node:dgram:663:20
+      1  100.0%          JS: ^processTicksAndRejections node:internal/process/task_queues:67:35
+
+     59    2.8%  __write@@GLIBC_2.2.5
+      5    8.5%    JS: ^internalCompileFunction node:internal/vm:124:33
+      5  100.0%      JS: ^wrapSafe node:internal/modules/cjs/loader:1252:18
+      5  100.0%        JS: ^Module._compile node:internal/modules/cjs/loader:1321:37
+      3   60.0%          JS: ~S /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/tsx@4.7.1/node_modules/tsx/dist/cjs/index.cjs:1:974
+      3  100.0%            JS: ^Module.load node:internal/modules/cjs/loader:1192:33
+      2   40.0%          JS: ^S /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/tsx@4.7.1/node_modules/tsx/dist/cjs/index.cjs:1:974
+      2  100.0%            JS: ^Module.load node:internal/modules/cjs/loader:1192:33
+      4    6.8%    JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      4  100.0%      JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      2   50.0%        JS: ~<anonymous> node:crypto:1:1
+      2  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      2  100.0%            JS: ^compileForPublicLoader node:internal/bootstrap/realm:331:25
+      1   25.0%        JS: ~getSource node:internal/modules/esm/load:40:25
+      1  100.0%          JS: ~defaultLoad node:internal/modules/esm/load:110:27
+      1  100.0%            JS: ~load node:internal/modules/esm/loader:399:13
+      1   25.0%        JS: ~<anonymous> node:stream:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      1    1.7%    JS: ~toString node:internal/url:906:11
+      1  100.0%      JS: ~URL node:internal/url:790:14
+      1  100.0%        JS: ~packageResolve node:internal/modules/esm/resolve:789:24
+      1  100.0%          JS: ~moduleResolve node:internal/modules/esm/resolve:887:23
+      1  100.0%            JS: ~defaultResolve node:internal/modules/esm/resolve:1055:24
+      1    1.7%    JS: ~resolvePackageTarget node:internal/modules/esm/resolve:470:30
+      1  100.0%      JS: ~resolvePackageTarget node:internal/modules/esm/resolve:470:30
+      1  100.0%        JS: ~resolvePackageTarget node:internal/modules/esm/resolve:470:30
+      1  100.0%          JS: ~packageExportsResolve node:internal/modules/esm/resolve:576:31
+      1  100.0%            JS: ~resolveExports node:internal/modules/cjs/loader:579:24
+      1    1.7%    JS: ~readableAddChunkPushByteMode node:internal/streams/readable:461:38
+      1  100.0%      JS: ~Readable.push node:internal/streams/readable:385:35
+      1  100.0%        JS: ~<anonymous> node:internal/fs/streams:262:41
+      1  100.0%          JS: ~wrapper node:fs:684:19
+      1    1.7%    JS: ~push node:internal/fixed_queue:99:7
+      1  100.0%      JS: ~nextTick node:internal/process/task_queues:103:18
+      1  100.0%        JS: ~resume node:internal/streams/readable:1245:16
+      1  100.0%          JS: ~Readable.resume node:internal/streams/readable:1225:37
+      1  100.0%            JS: ~Readable.on node:internal/streams/readable:1125:33
+      1    1.7%    JS: ~oninit node:internal/worker/io:231:16
+      1  100.0%      JS: ~makeAsyncRequest node:internal/modules/esm/hooks:545:25
+      1  100.0%        JS: ~resolve node:internal/modules/esm/loader:485:10
+      1  100.0%          JS: ^resolve node:internal/modules/esm/loader:350:10
+      1  100.0%            JS: ^getModuleJob node:internal/modules/esm/loader:233:21
+      1    1.7%    JS: ~nextTick node:internal/process/task_queues:103:18
+      1  100.0%      JS: ~lookup node:dns:140:16
+      1  100.0%        JS: ~lookup4 node:internal/dgram:23:17
+      1  100.0%          JS: ~Socket.bind node:dgram:237:33
+      1  100.0%            Script: ~<anonymous> file:///home/hayden/Projects/udp-mesh-stream-demo/src/index.ts:1:1
+      1    1.7%    JS: ~maybeCacheSourceMap node:internal/source_map/source_map_cache:107:29
+      1  100.0%      JS: ^wrapSafe node:internal/modules/cjs/loader:1252:18
+      1  100.0%        JS: ^Module._compile node:internal/modules/cjs/loader:1321:37
+      1  100.0%          JS: ~S /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/tsx@4.7.1/node_modules/tsx/dist/cjs/index.cjs:1:974
+      1  100.0%            JS: ^Module.load node:internal/modules/cjs/loader:1192:33
+      1    1.7%    JS: ~makeAsyncRequest node:internal/modules/esm/hooks:545:25
+      1  100.0%      Builtin: AsyncFunctionAwaitResolveClosure
+      1    1.7%    JS: ~j /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/get-tsconfig@4.7.3/node_modules/get-tsconfig/dist/index.cjs:2:231
+      1  100.0%      JS: ~g /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/get-tsconfig@4.7.3/node_modules/get-tsconfig/dist/index.cjs:3:4198
+      1  100.0%        JS: ~ve /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/get-tsconfig@4.7.3/node_modules/get-tsconfig/dist/index.cjs:3:3391
+      1  100.0%          JS: ~Te /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/get-tsconfig@4.7.3/node_modules/get-tsconfig/dist/index.cjs:3:2984
+      1  100.0%            JS: ~ne /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/get-tsconfig@4.7.3/node_modules/get-tsconfig/dist/index.cjs:3:7616
+      1    1.7%    JS: ~internalCompileFunction node:internal/vm:124:33
+      1  100.0%      JS: ~wrapSafe node:internal/modules/cjs/loader:1252:18
+      1  100.0%        JS: ~Module._compile node:internal/modules/cjs/loader:1321:37
+      1  100.0%          JS: ~Module._extensions..js node:internal/modules/cjs/loader:1380:37
+      1  100.0%            JS: ~Module.load node:internal/modules/cjs/loader:1192:33
+      1    1.7%    JS: ~eachItem /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/ajv@8.12.0/node_modules/ajv/dist/compile/util.js:82:18
+      1  100.0%      JS: ~checkKeyword /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/ajv@8.12.0/node_modules/ajv/dist/core.js:550:22
+      1  100.0%        JS: ~addKeyword /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/ajv@8.12.0/node_modules/ajv/dist/core.js:331:15
+      1  100.0%          JS: ~_addVocabularies /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/ajv@8.12.0/node_modules/ajv/dist/core.js:122:21
+      1  100.0%            JS: ~_addVocabularies /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/ajv@8.12.0/node_modules/ajv/dist/ajv.js:11:21
+      1    1.7%    JS: ~close node:internal/fs/promises:236:11
+      1  100.0%      JS: ~<anonymous> node:internal/fs/promises:427:5
+      1    1.7%    JS: ~basename node:path:1309:11
+      1  100.0%      JS: ~findLongestRegisteredExtension node:internal/modules/cjs/loader:500:40
+      1  100.0%        JS: ~Module.load node:internal/modules/cjs/loader:1192:33
+      1  100.0%          JS: ~Module._load node:internal/modules/cjs/loader:948:24
+      1  100.0%            JS: ~Module.require node:internal/modules/cjs/loader:1222:36
+      1    1.7%    JS: ~addVocabulary /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/ajv@8.12.0/node_modules/ajv/dist/core.js:326:18
+      1  100.0%      JS: ~<anonymous> /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/ajv@8.12.0/node_modules/ajv/dist/ajv.js:13:34
+      1  100.0%        Builtin: ArrayForEach
+      1  100.0%          JS: ~_addVocabularies /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/ajv@8.12.0/node_modules/ajv/dist/ajv.js:11:21
+      1  100.0%            JS: ~Ajv /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/ajv@8.12.0/node_modules/ajv/dist/core.js:94:16
+      1    1.7%    JS: ~addSchema /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/json-schema-ref-resolver@1.0.1/node_modules/json-schema-ref-resolver/index.js:22:13
+      1  100.0%      JS: ~build /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/fast-json-stringify@5.13.0/node_modules/fast-json-stringify/index.js:82:16
+      1  100.0%        Script: ~<anonymous> file:///home/hayden/Projects/udp-mesh-stream-demo/src/index.ts:1:1
+      1  100.0%          Builtin: AsyncModuleEvaluate
+      1  100.0%            Builtin: CallApiCallbackGeneric
+      1    1.7%    JS: ~addFormats /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/ajv-formats@2.1.1_ajv@8.12.0/node_modules/ajv-formats/dist/index.js:27:20
+      1  100.0%      JS: ~formatsPlugin /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/ajv-formats@2.1.1_ajv@8.12.0/node_modules/ajv-formats/dist/index.js:8:23
+      1  100.0%        JS: ~Validator /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/fast-json-stringify@5.13.0/node_modules/fast-json-stringify/lib/validator.js:9:15
+      1  100.0%          JS: ~build /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/fast-json-stringify@5.13.0/node_modules/fast-json-stringify/index.js:82:16
+      1  100.0%            Script: ~<anonymous> file:///home/hayden/Projects/udp-mesh-stream-demo/src/index.ts:1:1
+      1    1.7%    JS: ~Ve /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/get-tsconfig@4.7.3/node_modules/get-tsconfig/dist/index.cjs:3:13179
+      1  100.0%      JS: ~<anonymous> /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/tsx@4.7.1/node_modules/tsx/dist/cjs/index.cjs:1:1
+      1  100.0%        JS: ~Module._compile node:internal/modules/cjs/loader:1321:37
+      1  100.0%          JS: ~Module._extensions..js node:internal/modules/cjs/loader:1380:37
+      1  100.0%            JS: ~Module.load node:internal/modules/cjs/loader:1192:33
+      1    1.7%    JS: ~Module node:internal/modules/cjs/loader:251:16
+      1  100.0%      JS: ~Module._preloadModules node:internal/modules/cjs/loader:1555:34
+      1  100.0%        JS: ~loadPreloadModules node:internal/process/pre_execution:728:28
+      1  100.0%          JS: ~setupUserModules node:internal/process/pre_execution:191:26
+      1  100.0%            JS: ~prepareExecution node:internal/process/pre_execution:97:26
+      1    1.7%    JS: ~<anonymous> node:internal/fs/utils:894:38
+      1  100.0%      JS: ^wrappedFn node:internal/errors:536:21
+      1  100.0%        JS: ~access node:internal/fs/promises:599:22
+      1  100.0%          JS: ~removeOldCacheDirectory /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/tsx@4.7.1/node_modules/tsx/dist/index-971a6964.cjs:15:1609
+      1  100.0%            JS: ~<anonymous> /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/tsx@4.7.1/node_modules/tsx/dist/index-971a6964.cjs:15:938
+      1    1.7%    JS: ~<anonymous> node:internal/bootstrap/realm:357:15
+      1  100.0%      Builtin: CallApiCallbackGeneric
+      1  100.0%        JS: ~getESMFacade node:internal/bootstrap/realm:347:15
+      1  100.0%          JS: ~builtinStrategy node:internal/modules/esm/translators:458:52
+      1  100.0%            JS: ~callTranslator node:internal/modules/esm/loader:272:28
+      1    1.7%    JS: ~<anonymous> node:child_process:1:1
+      1  100.0%      JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      1  100.0%        JS: ^compileForPublicLoader node:internal/bootstrap/realm:331:25
+      1  100.0%          JS: ^loadBuiltinModule node:internal/modules/helpers:96:27
+      1  100.0%            JS: ^Module._load node:internal/modules/cjs/loader:948:24
+      1    1.7%    JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      1  100.0%      JS: ~moduleStrategy node:internal/modules/esm/translators:164:56
+      1  100.0%        JS: ^callTranslator node:internal/modules/esm/loader:272:28
+      1  100.0%          JS: ^moduleProvider node:internal/modules/esm/loader:285:7
+      1  100.0%            Builtin: AsyncFunctionAwaitResolveClosure
+      1    1.7%    JS: ^handleWriteReq node:internal/stream_base_commons:45:24
+      1  100.0%      JS: ^writeGeneric node:internal/stream_base_commons:147:22
+      1  100.0%        JS: ^Socket._writeGeneric node:net:921:42
+      1  100.0%          JS: ^Socket._write node:net:963:35
+      1  100.0%            JS: ^writeOrBuffer node:internal/streams/writable:540:23
+      1    1.7%    JS: ^emit node:events:466:44
+      1  100.0%      JS: ^emit node:domain:477:44
+      1  100.0%        JS: ~addChunk node:internal/streams/readable:548:18
+      1  100.0%          JS: ~readableAddChunkPushByteMode node:internal/streams/readable:461:38
+      1  100.0%            JS: ~Readable.push node:internal/streams/readable:385:35
+      1    1.7%    Builtin: TypedArrayPrototypeByteLength
+      1  100.0%      JS: ^sliceBuffer node:dgram:483:21
+      1  100.0%        JS: ^Socket.send node:dgram:577:33
+      1  100.0%          JS: ^<anonymous> file:///home/hayden/Projects/udp-mesh-stream-demo/src/index.ts:1:1646
+      1  100.0%            JS: ^emit node:events:466:44
+      1    1.7%    Builtin: ReflectGet
+      1  100.0%      JS: ~getOwn node:internal/bootstrap/realm:204:16
+      1  100.0%        JS: ~syncExports node:internal/bootstrap/realm:371:14
+      1  100.0%          JS: ~<anonymous> node:internal/bootstrap/realm:357:15
+      1  100.0%            Builtin: CallApiCallbackGeneric
+      1    1.7%    Builtin: CEntry_Return1_ArgvOnStack_NoBuiltinExit
+      1  100.0%      JS: ~<anonymous> /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/esbuild@0.19.12/node_modules/esbuild/lib/main.js:1:1
+      1  100.0%        JS: ~Module._compile node:internal/modules/cjs/loader:1321:37
+      1  100.0%          JS: ~Module._extensions..js node:internal/modules/cjs/loader:1380:37
+      1  100.0%            JS: ~Module.load node:internal/modules/cjs/loader:1192:33
+      1    1.7%    Builtin: AsyncFunctionAwaitResolveClosure
+
+     28    1.3%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     12   42.9%    JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+     10   83.3%      JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      2   20.0%        JS: ~<anonymous> node:repl:1:1
+      2  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      2  100.0%            JS: ^compileForPublicLoader node:internal/bootstrap/realm:331:25
+      2   20.0%        JS: ~<anonymous> node:internal/streams/duplex:1:1
+      2  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      2  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      1   10.0%        JS: ~initCJSParse node:internal/modules/esm/translators:82:28
+      1  100.0%          JS: ~commonjsStrategy node:internal/modules/esm/translators:354:60
+      1  100.0%            JS: ~callTranslator node:internal/modules/esm/loader:272:28
+      1   10.0%        JS: ~<anonymous> node:worker_threads:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      1  100.0%            JS: ~compileForPublicLoader node:internal/bootstrap/realm:331:25
+      1   10.0%        JS: ~<anonymous> node:stream:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      1   10.0%        JS: ~<anonymous> node:module:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      1  100.0%            JS: ~compileForPublicLoader node:internal/bootstrap/realm:331:25
+      1   10.0%        JS: ~<anonymous> node:internal/cluster/primary:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      1  100.0%            JS: ^requireBuiltin node:internal/bootstrap/realm:420:24
+      1   10.0%        JS: ~<anonymous> node:child_process:1:1
+      1  100.0%          JS: ^compileForInternalLoader node:internal/bootstrap/realm:383:27
+      1  100.0%            JS: ^compileForPublicLoader node:internal/bootstrap/realm:331:25
+      1    8.3%      JS: ~compileForPublicLoader node:internal/bootstrap/realm:331:25
+      1  100.0%        JS: ~loadBuiltinModule node:internal/modules/helpers:96:27
+      1  100.0%          JS: ~Module._load node:internal/modules/cjs/loader:948:24
+      1  100.0%            JS: ~Module.require node:internal/modules/cjs/loader:1222:36
+      1    8.3%      JS: ^compileForPublicLoader node:internal/bootstrap/realm:331:25
+      1  100.0%        JS: ^loadBuiltinModule node:internal/modules/helpers:96:27
+      1  100.0%          JS: ~builtinStrategy node:internal/modules/esm/translators:458:52
+      1  100.0%            JS: ~callTranslator node:internal/modules/esm/loader:272:28
+      7   25.0%    JS: ^internalCompileFunction node:internal/vm:124:33
+      5   71.4%      JS: ^wrapSafe node:internal/modules/cjs/loader:1252:18
+      5  100.0%        JS: ^Module._compile node:internal/modules/cjs/loader:1321:37
+      3   60.0%          JS: ^S /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/tsx@4.7.1/node_modules/tsx/dist/cjs/index.cjs:1:974
+      3  100.0%            JS: ^Module.load node:internal/modules/cjs/loader:1192:33
+      2   40.0%          JS: ~S /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/tsx@4.7.1/node_modules/tsx/dist/cjs/index.cjs:1:974
+      2  100.0%            JS: ^Module.load node:internal/modules/cjs/loader:1192:33
+      2   28.6%      JS: ~wrapSafe node:internal/modules/cjs/loader:1252:18
+      2  100.0%        JS: ~Module._compile node:internal/modules/cjs/loader:1321:37
+      2  100.0%          JS: ~Module._extensions..js node:internal/modules/cjs/loader:1380:37
+      2  100.0%            JS: ~Module.load node:internal/modules/cjs/loader:1192:33
+      2    7.1%    JS: ~resolve node:path:1095:10
+      2  100.0%      JS: ~Module._initPaths node:internal/modules/cjs/loader:1521:29
+      2  100.0%        JS: ~initializeCJS node:internal/modules/cjs/loader:382:23
+      2  100.0%          JS: ~initializeCJSLoader node:internal/process/pre_execution:691:29
+      2  100.0%            JS: ~setupUserModules node:internal/process/pre_execution:191:26
+      1    3.6%    JS: ~setSourceMapsEnabled node:internal/source_map/source_map_cache:55:30
+      1  100.0%      JS: ~initializeSourceMapsHandlers node:internal/process/pre_execution:713:38
+      1  100.0%        JS: ~prepareExecution node:internal/process/pre_execution:97:26
+      1  100.0%          JS: ~prepareMainThreadExecution node:internal/process/pre_execution:53:36
+      1  100.0%            JS: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    3.6%    JS: ~setImmediate node:timers:285:22
+      1  100.0%      JS: ~pA /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/tsx@4.7.1/node_modules/tsx/dist/index-971a6964.cjs:15:741
+      1  100.0%        JS: ~<anonymous> /home/hayden/Projects/udp-mesh-stream-demo/node_modules/.pnpm/tsx@4.7.1/node_modules/tsx/dist/index-971a6964.cjs:1:1
+      1  100.0%          JS: ~Module._compile node:internal/modules/cjs/loader:1321:37
+      1  100.0%            JS: ~Module._extensions..js node:internal/modules/cjs/loader:1380:37
+      1    3.6%    JS: ~refreshRuntimeOptions node:internal/process/pre_execution:210:31
+      1  100.0%      JS: ~prepareExecution node:internal/process/pre_execution:97:26
+      1  100.0%        JS: ~prepareMainThreadExecution node:internal/process/pre_execution:53:36
+      1  100.0%          JS: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    3.6%    JS: ~realpathSync node:fs:2625:22
+      1  100.0%      JS: ~toRealPath node:internal/modules/helpers:57:20
+      1  100.0%        JS: ~Module._findPath node:internal/modules/cjs/loader:608:28
+      1  100.0%          JS: ~Module._resolveFilename node:internal/modules/cjs/loader:1056:35
+      1  100.0%            JS: ~Module._load node:internal/modules/cjs/loader:948:24
+      1    3.6%    JS: ~patchProcessObject node:internal/process/pre_execution:221:28
+      1  100.0%      JS: ~prepareExecution node:internal/process/pre_execution:97:26
+      1  100.0%        JS: ~prepareMainThreadExecution node:internal/process/pre_execution:53:36
+      1  100.0%          JS: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    3.6%    JS: ~normalizeString node:path:66:25
+      1  100.0%      JS: ~resolve node:path:1095:10
+      1  100.0%        JS: ~patchProcessObject node:internal/process/pre_execution:221:28
+      1  100.0%          JS: ~prepareExecution node:internal/process/pre_execution:97:26
+      1  100.0%            JS: ~prepareMainThreadExecution node:internal/process/pre_execution:53:36
+
