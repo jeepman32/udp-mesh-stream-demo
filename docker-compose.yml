@@ -1,15 +1,32 @@
 services:
-  backend:
+  cnc:
     restart: always
     build:
       context: .
-      target: development
-    volumes:
-      - ./src:/usr/src/app/src
+      target: cnc
     networks:
-      - bus
+      - lan
+  server:
+    restart: always
+    build:
+      context: .
+      target: server
+    networks:
+      - lan
+    deploy:
+      mode: replicated
+      replicas: 16
+  client:
+    restart: always
+    build:
+      context: .
+      target: client
+    networks:
+      - lan
+    expose:
+      - 5000-5063:5000
     deploy:
       mode: replicated
       replicas: 16
 networks:
-  bus:
+  lan:
